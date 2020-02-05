@@ -28,26 +28,6 @@ std::string Solution::add(std::string str, int num) {
     return str + std::to_string(num);
 }
 
-// Q2 Find size of int array
-int Solution::sizeOf(int ptr[]) {
-    return sizeof(ptr) / sizeof(ptr[0]) + 1;
-}
-
-// Find Size of char array
-int Solution::sizeOf(char *ptr) {
-    int count = 0;
-    while(*ptr != '\0') {
-        count++;
-        ptr++;
-    }
-    return count;
-}
-
-// Find Size of float array
-int Solution::sizeOf(float ptr[]) {
-    return sizeof(ptr) / sizeof(ptr[0]);
-}
-
 // 3.1a No std::set
 void Solution::removeDuplicate(std::vector<int> &input) {
     bool isDuplicated = false;
